@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+groq==0.11.0
+# groq 0.11.x constructs an httpx client with the legacy `proxies` argument.
+# httpx 0.28 removed that argument, so keep the compatible client release.
+httpx==0.27.2
+pypdf==4.3.1
+python-multipart==0.0.9
